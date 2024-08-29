@@ -1,4 +1,6 @@
 // Sulaiman Mohammed AlEssa / +966540054047  / essasm@hotmail.com
+//can not complete rest-assured Testing because the Maven takes too long time to exists
+
 
 @Test
 	public  void login () throws InterruptedException	{
