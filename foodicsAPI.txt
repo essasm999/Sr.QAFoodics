@@ -1,0 +1,25 @@
+// Sulaiman Mohammed AlEssa / +966540054047  / essasm@hotmail.com
+
+@Test
+	public  void login () throws InterruptedException	{
+	
+		
+		// chrome driver exe path
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\test_\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new WebDriver();
+	
+		// will navigate foodics login page
+
+		driver.get("https://pay2.foodics.dev/login");
+
+// go to userName input cell
+WebElement username = driver.findElement(By.id("email"));
+// enters this email
+username.sendKeys("merchant@foodics.com");
+
+// go to password input cell
+WebElement pass = driver.findElement(By.Class("input p-2 !pe-16"));
+// enter this password
+pass.sendKeys("123456");
+
+
